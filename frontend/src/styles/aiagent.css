@@ -1,0 +1,408 @@
+/* ============================================================
+   AI AGENT CHAT - MOBILE FIRST RESPONSIVE
+============================================================ */
+
+/* Mobile: < 640px */
+
+/* ============================================================
+   FLOATING BUTTON
+============================================================ */
+
+.aiagent-float-button {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--brand), var(--brand-accent), var(--brand-alt));
+  background-size: 200% 200%;
+  border: none;
+  color: #0b0f19;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 8px 24px rgba(124, 245, 255, 0.4);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  min-width: 56px;
+  min-height: 56px;
+  padding: 0;
+  animation: float 3s ease-in-out infinite;
+}
+
+.aiagent-float-button:hover {
+  transform: scale(1.15);
+  box-shadow: 0 12px 32px rgba(124, 245, 255, 0.6);
+  background-position: 100% 0;
+}
+
+.aiagent-float-button:active {
+  transform: scale(0.95);
+}
+
+/* ============================================================
+   MODAL WINDOW
+============================================================ */
+
+.aiagent-modal {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  width: calc(100vw - 32px);
+  max-width: 100vw;
+  height: calc(100vh - 32px);
+  max-height: calc(100vh - 32px);
+  background: var(--panel);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  z-index: 1001;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  animation: slideInBottom 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* ============================================================
+   MODAL HEADER
+============================================================ */
+
+.aiagent-header {
+  padding: 12px 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+  gap: 12px;
+  background: linear-gradient(135deg, rgba(124,245,255,0.05), rgba(255,155,251,0.05));
+  transition: all 0.3s ease;
+  animation: slideInTop 0.4s ease-out;
+}
+
+.aiagent-header h3 {
+  margin: 0;
+  background: linear-gradient(90deg, var(--brand), var(--brand-accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 15px;
+  flex: 1;
+}
+
+.aiagent-close-btn {
+  background: none;
+  border: none;
+  color: var(--muted);
+  cursor: pointer;
+  font-size: 18px;
+  padding: 0;
+  min-width: auto;
+  min-height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.aiagent-close-btn:hover {
+  color: var(--brand);
+  transform: rotate(90deg);
+}
+
+/* ============================================================
+   MESSAGES AREA
+============================================================ */
+
+.aiagent-messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  animation: fadeIn 0.5s ease-in;
+}
+
+.aiagent-messages::-webkit-scrollbar {
+  width: 6px;
+}
+
+.aiagent-messages::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--brand), var(--brand-accent));
+  border-radius: 999px;
+}
+
+.aiagent-message {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  max-width: 85%;
+  padding: 10px 12px;
+  border-radius: 10px;
+  font-size: 13px;
+  line-height: 1.4;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  animation: slideInBottom 0.4s ease-out;
+  transition: all 0.3s ease;
+}
+
+.aiagent-message.user {
+  align-self: flex-end;
+  background: linear-gradient(135deg, var(--brand), var(--brand-accent));
+  color: #0b0f19;
+  text-align: right;
+  box-shadow: 0 4px 12px rgba(124,245,255,0.2);
+}
+
+.aiagent-message.user:hover {
+  transform: translateX(-4px);
+  box-shadow: 0 6px 16px rgba(124,245,255,0.3);
+}
+
+.aiagent-message.ai {
+  align-self: flex-start;
+  background: linear-gradient(135deg, rgba(124,245,255,0.1), rgba(255,155,251,0.05));
+  color: var(--text);
+  border: 1px solid rgba(124,245,255,0.15);
+}
+
+.aiagent-message.ai:hover {
+  transform: translateX(4px);
+  border-color: var(--brand);
+  background: linear-gradient(135deg, rgba(124,245,255,0.15), rgba(255,155,251,0.1));
+}
+
+.aiagent-loading {
+  align-self: flex-start;
+  padding: 10px 12px;
+  background: linear-gradient(135deg, rgba(124,245,255,0.1), rgba(255,155,251,0.05));
+  border: 1px solid rgba(124,245,255,0.15);
+  border-radius: 10px;
+  color: var(--muted);
+  font-size: 13px;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+/* ============================================================
+   INPUT AREA
+============================================================ */
+
+.aiagent-input-area {
+  padding: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+  background: linear-gradient(135deg, rgba(124,245,255,0.02), rgba(255,155,251,0.02));
+  animation: slideInBottom 0.4s ease-out;
+}
+
+.aiagent-input {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  padding: 10px 12px;
+  color: var(--text);
+  font-size: 13px;
+  min-height: 40px;
+  font-family: inherit;
+  transition: all 0.3s ease;
+}
+
+.aiagent-input:focus {
+  border-color: var(--brand);
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 0 3px rgba(124,245,255,0.15);
+  outline: none;
+  transform: translateY(-2px);
+}
+
+.aiagent-input::placeholder {
+  color: var(--muted);
+}
+
+/* ============================================================
+   ANIMATIONS
+============================================================ */
+
+@keyframes slideInBottom {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInTop {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+.aiagent-input:focus {
+  outline: none;
+  border-color: var(--brand);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.aiagent-send-btn {
+  background: linear-gradient(135deg, var(--brand), var(--brand-accent));
+  border: none;
+  border-radius: 8px;
+  padding: 10px 16px;
+  color: #0b0f19;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  min-height: 40px;
+  transition: opacity 0.2s ease;
+}
+
+.aiagent-send-btn:hover:not(:disabled) {
+  opacity: 0.9;
+}
+
+.aiagent-send-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Tablet: 640px - 768px */
+@media (min-width: 640px) {
+  .aiagent-modal {
+    width: 420px;
+    height: 520px;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 16px;
+  }
+
+  .aiagent-float-button {
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 20px;
+    font-size: 26px;
+    min-width: 60px;
+    min-height: 60px;
+  }
+
+  .aiagent-header {
+    padding: 16px;
+  }
+
+  .aiagent-header h3 {
+    font-size: 16px;
+  }
+
+  .aiagent-messages {
+    padding: 16px;
+    gap: 12px;
+  }
+
+  .aiagent-message {
+    font-size: 14px;
+    max-width: 80%;
+    padding: 12px 14px;
+  }
+
+  .aiagent-loading {
+    padding: 12px 14px;
+    font-size: 14px;
+  }
+
+  .aiagent-input-area {
+    padding: 16px;
+    gap: 10px;
+  }
+
+  .aiagent-input {
+    padding: 10px 14px;
+    font-size: 14px;
+    min-height: 42px;
+  }
+
+  .aiagent-send-btn {
+    padding: 10px 18px;
+    font-size: 14px;
+    min-height: 42px;
+  }
+}
+
+/* Desktop: 769px+ */
+@media (min-width: 769px) {
+  .aiagent-modal {
+    width: 400px;
+    height: 500px;
+  }
+
+  .aiagent-float-button {
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+    min-height: 60px;
+  }
+
+  .aiagent-message {
+    max-width: 80%;
+  }
+}
+
+/* Scrollbar styling */
+.aiagent-messages::-webkit-scrollbar {
+  width: 6px;
+}
+
+.aiagent-messages::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.aiagent-messages::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 3px;
+}
+
+.aiagent-messages::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}

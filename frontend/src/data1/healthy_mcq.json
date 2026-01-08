@@ -1,0 +1,929 @@
+[
+  {
+    "id": 1,
+    "question": "Most vegetable oils are rich in which type of fat?",
+    "options": ["Saturated fats", "Polyunsaturated fats", "Trans fats", "Cholesterol"],
+    "correct": 1
+  },
+  {
+    "id": 2,
+    "question": "Which cooking method preserves nutrients the best?",
+    "options": ["Deep frying", "Steaming", "Charcoal grilling", "Pan searing"],
+    "correct": 1
+  },
+  {
+    "id": 3,
+    "question": "Which type of fat should be avoided the most?",
+    "options": ["Trans fats", "Omega-3 fats", "Monounsaturated fats", "Polyunsaturated fats"],
+    "correct": 0
+  },
+  {
+    "id": 4,
+    "question": "Which oil has the highest smoke point?",
+    "options": ["Avocado oil", "Flaxseed oil", "Butter", "Extra virgin olive oil"],
+    "correct": 0
+  },
+  {
+    "id": 5,
+    "question": "Which is a healthier alternative to deep frying?",
+    "options": ["Air frying", "Double frying", "Butter-frying", "Pan roasting with ghee"],
+    "correct": 0
+  },
+  {
+    "id": 6,
+    "question": "Which nutrient has the highest calories per gram?",
+    "options": ["Fat", "Protein", "Carbohydrate", "Fiber"],
+    "correct": 0
+  },
+  {
+    "id": 7,
+    "question": "Which oil contains the highest omega-3 content?",
+    "options": ["Flaxseed oil", "Sunflower oil", "Palm oil", "Coconut oil"],
+    "correct": 0
+  },
+  {
+    "id": 8,
+    "question": "Which is the healthiest fat for heart health?",
+    "options": ["Monounsaturated fats", "Hydrogenated fats", "Trans fats", "Saturated fats"],
+    "correct": 0
+  },
+  {
+    "id": 9,
+    "question": "Which cooking method uses NO additional oil?",
+    "options": ["Steaming", "Sautéing", "Shallow frying", "Deep frying"],
+    "correct": 0
+  },
+  {
+    "id": 10,
+    "question": "Which oil should NOT be used for frying?",
+    "options": ["Flaxseed oil", "Peanut oil", "Corn oil", "Refined sunflower oil"],
+    "correct": 0
+  },
+
+  {
+    "id": 11,
+    "question": "Which is a healthier substitute for butter in baking?",
+    "options": ["Olive oil", "Margarine", "Shortening", "Lard"],
+    "correct": 0
+  },
+  {
+    "id": 12,
+    "question": "Which method reduces oil absorption in food?",
+    "options": ["Using air fryers", "Double frying", "Slow frying", "Mixing oil with butter"],
+    "correct": 0
+  },
+  {
+    "id": 13,
+    "question": "Which is a good plant-based source of healthy fats?",
+    "options": ["Avocado", "White bread", "Candy", "Soft drinks"],
+    "correct": 0
+  },
+  {
+    "id": 14,
+    "question": "Which type of fat is solid at room temperature?",
+    "options": ["Saturated fat", "Unsaturated fat", "Omega-3 fat", "Polyunsaturated fat"],
+    "correct": 0
+  },
+  {
+    "id": 15,
+    "question": "Which is healthier for sautéing?",
+    "options": ["Olive oil", "Butter", "Palm oil", "Shortening"],
+    "correct": 0
+  },
+
+  {
+    "id": 16,
+    "question": "Which oil is best for salad dressing?",
+    "options": ["Extra virgin olive oil", "Palm oil", "Ghee", "Refined vegetable oil"],
+    "correct": 0
+  },
+  {
+    "id": 17,
+    "question": "Which cooking method removes excess fat from meat?",
+    "options": ["Grilling", "Deep frying", "Pan frying", "Shallow frying"],
+    "correct": 0
+  },
+  {
+    "id": 18,
+    "question": "Which oil contains natural antioxidants?",
+    "options": ["Extra virgin olive oil", "Canola oil", "Palm oil", "Lard"],
+    "correct": 0
+  },
+  {
+    "id": 19,
+    "question": "Which is a healthier replacement for sour cream?",
+    "options": ["Greek yogurt", "Mayonnaise", "Butter cream", "Heavy cream"],
+    "correct": 0
+  },
+  {
+    "id": 20,
+    "question": "Which oil is least stable at high heat?",
+    "options": ["Flaxseed oil", "Mustard oil", "Rice bran oil", "Peanut oil"],
+    "correct": 0
+  },
+
+  {
+    "id": 21,
+    "question": "Which method is best for reducing calories in meat?",
+    "options": ["Grilling", "Deep frying", "Cooking in butter", "Pan frying"],
+    "correct": 0
+  },
+  {
+    "id": 22,
+    "question": "Which food is high in monounsaturated fat?",
+    "options": ["Almonds", "White rice", "Sugar", "Candy"],
+    "correct": 0
+  },
+  {
+    "id": 23,
+    "question": "Which cooking method helps retain most minerals?",
+    "options": ["Steaming", "Boiling", "Deep frying", "Slow cooking"],
+    "correct": 0
+  },
+  {
+    "id": 24,
+    "question": "Which fat is recommended for brain health?",
+    "options": ["Omega-3 fats", "Trans fats", "Hydrogenated fats", "Palm fats"],
+    "correct": 0
+  },
+  {
+    "id": 25,
+    "question": "Which is the healthiest snack option?",
+    "options": ["Air-popped popcorn", "Chips", "Fried peanuts", "Butter popcorn"],
+    "correct": 0
+  },
+
+  {
+    "id": 26,
+    "question": "Which oil is best for high-heat frying?",
+    "options": ["Avocado oil", "Flaxseed oil", "Walnut oil", "Coconut oil"],
+    "correct": 0
+  },
+  {
+    "id": 27,
+    "question": "Which food contains natural healthy fats?",
+    "options": ["Nuts", "Soft drinks", "Sugar", "Biscuits"],
+    "correct": 0
+  },
+  {
+    "id": 28,
+    "question": "Which is a healthier alternative to mayonnaise?",
+    "options": ["Hung curd", "Butter", "Cream cheese", "Ghee"],
+    "correct": 0
+  },
+  {
+    "id": 29,
+    "question": "Which method avoids oil completely?",
+    "options": ["Steaming", "Shallow frying", "Sautéing", "Tawa frying"],
+    "correct": 0
+  },
+  {
+    "id": 30,
+    "question": "What happens when oil is reused many times?",
+    "options": ["Forms toxic compounds", "Increases nutrients", "Improves taste", "Lowers calories"],
+    "correct": 0
+  },
+
+  {
+    "id": 31,
+    "question": "Which fat increases LDL cholesterol the most?",
+    "options": ["Trans fat", "Monounsaturated fat", "Omega-3 fat", "Polyunsaturated fat"],
+    "correct": 0
+  },
+  {
+    "id": 32,
+    "question": "Which cooking oil is naturally rich in vitamin E?",
+    "options": ["Sunflower oil", "Ghee", "Lard", "Butter"],
+    "correct": 0
+  },
+  {
+    "id": 33,
+    "question": "Which is the best low-calorie cooking method?",
+    "options": ["Steaming", "Shallow frying", "Stir frying", "Roasting"],
+    "correct": 0
+  },
+  {
+    "id": 34,
+    "question": "Which oils are high in omega-6 fatty acids?",
+    "options": ["Corn oil", "Butter", "Ghee", "Coconut oil"],
+    "correct": 0
+  },
+  {
+    "id": 35,
+    "question": "Which oil is ideal for Indian deep frying?",
+    "options": ["Peanut oil", "Flaxseed oil", "Olive oil", "Mustard oil"],
+    "correct": 0
+  },
+
+  {
+    "id": 36,
+    "question": "Which fat is found mainly in meat and dairy?",
+    "options": ["Saturated fat", "Polyunsaturated fat", "Omega-3 fat", "Trans fat"],
+    "correct": 0
+  },
+  {
+    "id": 37,
+    "question": "Which oil is cold-pressed and used raw?",
+    "options": ["Flaxseed oil", "Canola oil", "Palm oil", "Ghee"],
+    "correct": 0
+  },
+  {
+    "id": 38,
+    "question": "Which method significantly reduces oil usage?",
+    "options": ["Air frying", "Double frying", "Slow frying", "Pan frying"],
+    "correct": 0
+  },
+  {
+    "id": 39,
+    "question": "Which food is naturally high in healthy fat?",
+    "options": ["Avocado", "Potato", "White bread", "Candy"],
+    "correct": 0
+  },
+  {
+    "id": 40,
+    "question": "Which oil is best for sautéing vegetables?",
+    "options": ["Olive oil", "Butter", "Shortening", "Palm oil"],
+    "correct": 0
+  },
+
+  {
+    "id": 41,
+    "question": "Which is a healthier alternative to frying chicken?",
+    "options": ["Air frying", "Double frying", "Using more oil", "Shallow frying"],
+    "correct": 0
+  },
+  {
+    "id": 42,
+    "question": "Which fat supports hormone production?",
+    "options": ["Healthy fats", "Trans fats", "Hydrogenated fats", "Artificial fats"],
+    "correct": 0
+  },
+  {
+    "id": 43,
+    "question": "Which cooking method requires the MOST oil?",
+    "options": ["Deep frying", "Sautéing", "Steaming", "Boiling"],
+    "correct": 0
+  },
+  {
+    "id": 44,
+    "question": "Which oil is highest in saturated fat?",
+    "options": ["Coconut oil", "Olive oil", "Peanut oil", "Canola oil"],
+    "correct": 0
+  },
+  {
+    "id": 45,
+    "question": "Which is a healthier alternative to cream?",
+    "options": ["Low-fat yogurt", "Butter", "Ghee", "Margarine"],
+    "correct": 0
+  },
+
+  {
+    "id": 46,
+    "question": "Which oil is best for making salad dressing?",
+    "options": ["Extra virgin olive oil", "Palm oil", "Ghee", "Corn oil"],
+    "correct": 0
+  },
+  {
+    "id": 47,
+    "question": "Which fat is essential for brain development?",
+    "options": ["Omega-3 fats", "Trans fats", "Shortening", "Palm fats"],
+    "correct": 0
+  },
+  {
+    "id": 48,
+    "question": "Which cooking method reduces calories in meat?",
+    "options": ["Grilling", "Deep frying", "Butter frying", "Tawa frying"],
+    "correct": 0
+  },
+  {
+    "id": 49,
+    "question": "Which oil is most stable for frying?",
+    "options": ["Peanut oil", "Flaxseed oil", "Sesame oil", "Avocado oil"],
+    "correct": 0
+  },
+  {
+    "id": 50,
+    "question": "Which type of fat should make up most of your diet?",
+    "options": ["Healthy unsaturated fats", "Trans fats", "Hydrogenated fats", "Saturated fats"],
+    "correct": 0
+  }
+,
+  {
+    "id": 51,
+    "question": "Which method helps reduce oil absorption when frying?",
+    "options": ["Coating with breadcrumbs", "Using cold oil", "Using butter", "Reusing oil"],
+    "correct": 0
+  },
+  {
+    "id": 52,
+    "question": "Which oil is best suited for shallow frying?",
+    "options": ["Olive oil", "Flaxseed oil", "Butter", "Ghee"],
+    "correct": 0
+  },
+  {
+    "id": 53,
+    "question": "Which nutrient helps the body absorb fat-soluble vitamins?",
+    "options": ["Fat", "Protein", "Carbohydrates", "Fiber"],
+    "correct": 0
+  },
+  {
+    "id": 54,
+    "question": "Which oil is commonly used for tempering in Indian cooking?",
+    "options": ["Mustard oil", "Coconut oil", "Avocado oil", "Palm oil"],
+    "correct": 0
+  },
+  {
+    "id": 55,
+    "question": "Which food naturally contains healthy fats?",
+    "options": ["Walnuts", "Chips", "Biscuits", "Candy"],
+    "correct": 0
+  },
+  {
+    "id": 56,
+    "question": "Which cooking method significantly reduces oil in food?",
+    "options": ["Air frying", "Deep frying", "Pan frying", "Butter roasting"],
+    "correct": 0
+  },
+  {
+    "id": 57,
+    "question": "Which oil is best used raw for maximum benefit?",
+    "options": ["Flaxseed oil", "Palm oil", "Butter", "Shortening"],
+    "correct": 0
+  },
+  {
+    "id": 58,
+    "question": "Which fat supports cell membrane structure?",
+    "options": ["Healthy fats", "Trans fats", "Hydrogenated fats", "Shortening"],
+    "correct": 0
+  },
+  {
+    "id": 59,
+    "question": "Which oil contains natural anti-inflammatory compounds?",
+    "options": ["Olive oil", "Palm oil", "Butter", "Cottonseed oil"],
+    "correct": 0
+  },
+  {
+    "id": 60,
+    "question": "Which frying method uses the LEAST oil?",
+    "options": ["Air frying", "Shallow frying", "Pan frying", "Deep frying"],
+    "correct": 0
+  },
+
+  {
+    "id": 61,
+    "question": "Which oil is recommended for low-heat cooking?",
+    "options": ["Extra virgin olive oil", "Corn oil", "Peanut oil", "Mustard oil"],
+    "correct": 0
+  },
+  {
+    "id": 62,
+    "question": "Which cooking method preserves the most antioxidants?",
+    "options": ["Steaming", "Deep frying", "Boiling", "Pressure cooking"],
+    "correct": 0
+  },
+  {
+    "id": 63,
+    "question": "Which food is naturally high in omega-3 fats?",
+    "options": ["Chia seeds", "Potatoes", "White rice", "Cookies"],
+    "correct": 0
+  },
+  {
+    "id": 64,
+    "question": "Which oil becomes harmful when heated?",
+    "options": ["Flaxseed oil", "Avocado oil", "Peanut oil", "Mustard oil"],
+    "correct": 0
+  },
+  {
+    "id": 65,
+    "question": "Which is a healthier substitute for whole cream?",
+    "options": ["Low-fat yogurt", "Mayonnaise", "Butter", "Cheese"],
+    "correct": 0
+  },
+
+  {
+    "id": 66,
+    "question": "Which fat is essential for vitamin D absorption?",
+    "options": ["Healthy fats", "Trans fats", "Hydrogenated fats", "Shortening"],
+    "correct": 0
+  },
+  {
+    "id": 67,
+    "question": "Which cooking method reduces calorie intake?",
+    "options": ["Boiling", "Deep frying", "Pan frying", "Roasting with butter"],
+    "correct": 0
+  },
+  {
+    "id": 68,
+    "question": "Which oil is safest for high-heat stir fry?",
+    "options": ["Avocado oil", "Flaxseed oil", "Butter", "Sesame oil"],
+    "correct": 0
+  },
+  {
+    "id": 69,
+    "question": "Which food is a good alternative to fried snacks?",
+    "options": ["Roasted chana", "Chips", "Cookies", "Fried peanuts"],
+    "correct": 0
+  },
+  {
+    "id": 70,
+    "question": "Which oil contains mostly saturated fats?",
+    "options": ["Coconut oil", "Canola oil", "Olive oil", "Sesame oil"],
+    "correct": 0
+  },
+
+  {
+    "id": 71,
+    "question": "Which oil is used commonly in Mediterranean diets?",
+    "options": ["Olive oil", "Palm oil", "Mustard oil", "Lard"],
+    "correct": 0
+  },
+  {
+    "id": 72,
+    "question": "Which method reduces fat content in meat?",
+    "options": ["Grilling", "Deep frying", "Pan frying", "Butter roasting"],
+    "correct": 0
+  },
+  {
+    "id": 73,
+    "question": "Which is the healthiest bedtime snack?",
+    "options": ["Nuts", "Chips", "Chocolate", "Sugary cereal"],
+    "correct": 0
+  },
+  {
+    "id": 74,
+    "question": "Which oil is rich in antioxidants like polyphenols?",
+    "options": ["Extra virgin olive oil", "Soybean oil", "Palm oil", "Cottonseed oil"],
+    "correct": 0
+  },
+  {
+    "id": 75,
+    "question": "Which fat should be minimized for heart health?",
+    "options": ["Trans fats", "Omega-3 fats", "Monounsaturated fats", "Polyunsaturated fats"],
+    "correct": 0
+  },
+
+  {
+    "id": 76,
+    "question": "Which oil is derived from seeds and high in omega-3?",
+    "options": ["Flaxseed oil", "Palm oil", "Butter", "Mustard oil"],
+    "correct": 0
+  },
+  {
+    "id": 77,
+    "question": "Which method avoids external oil entirely?",
+    "options": ["Steaming", "Stir frying", "Shallow frying", "Sautéing"],
+    "correct": 0
+  },
+  {
+    "id": 78,
+    "question": "Which fat is naturally found in fish?",
+    "options": ["Omega-3 fats", "Trans fats", "Artificial fats", "Hydrogenated fats"],
+    "correct": 0
+  },
+  {
+    "id": 79,
+    "question": "Which cooking method helps vegetables retain color and nutrients?",
+    "options": ["Steaming", "Deep frying", "Pan frying", "Roasting in oil"],
+    "correct": 0
+  },
+  {
+    "id": 80,
+    "question": "Which food is a healthier alternative to potato chips?",
+    "options": ["Baked vegetable chips", "Fried nachos", "Butter popcorn", "Sugary biscuits"],
+    "correct": 0
+  },
+
+  {
+    "id": 81,
+    "question": "Which oil supports healthy cholesterol levels?",
+    "options": ["Olive oil", "Palm oil", "Shortening", "Hydrogenated fat"],
+    "correct": 0
+  },
+  {
+    "id": 82,
+    "question": "Which oil is ideal for light frying?",
+    "options": ["Canola oil", "Butter", "Ghee", "Shortening"],
+    "correct": 0
+  },
+  {
+    "id": 83,
+    "question": "Which food contains natural unsaturated fats?",
+    "options": ["Nuts and seeds", "White bread", "Sugar sweets", "Processed chips"],
+    "correct": 0
+  },
+  {
+    "id": 84,
+    "question": "Which oil should be avoided for high heat?",
+    "options": ["Flaxseed oil", "Rice bran oil", "Peanut oil", "Mustard oil"],
+    "correct": 0
+  },
+  {
+    "id": 85,
+    "question": "Which is a healthy post-workout snack?",
+    "options": ["Greek yogurt", "Chips", "Cheesecake", "Fried snacks"],
+    "correct": 0
+  },
+
+  {
+    "id": 86,
+    "question": "Which food naturally contains healthy oils?",
+    "options": ["Olives", "Bread", "Candy", "Soft drinks"],
+    "correct": 0
+  },
+  {
+    "id": 87,
+    "question": "Which oil reduces inflammation in the body?",
+    "options": ["Olive oil", "Palm oil", "Butter oil", "Shortening"],
+    "correct": 0
+  },
+  {
+    "id": 88,
+    "question": "Which cooking method removes fat from meat while cooking?",
+    "options": ["Grilling", "Frying", "Butter roasting", "Deep frying"],
+    "correct": 0
+  },
+  {
+    "id": 89,
+    "question": "Which is a healthier topping for sandwiches?",
+    "options": ["Hummus", "Butter", "Mayonnaise", "Cream cheese"],
+    "correct": 0
+  },
+  {
+    "id": 90,
+    "question": "Which oil is recommended for roasting?",
+    "options": ["Avocado oil", "Flaxseed oil", "Butter", "Palm oil"],
+    "correct": 0
+  },
+
+  {
+    "id": 91,
+    "question": "Which fat helps absorb vitamins A, D, E, K?",
+    "options": ["Healthy fats", "Trans fats", "Artificial fats", "Hydrogenated fats"],
+    "correct": 0
+  },
+  {
+    "id": 92,
+    "question": "Which method prevents nutrient loss the most?",
+    "options": ["Steaming", "Boiling", "Deep frying", "Overcooking"],
+    "correct": 0
+  },
+  {
+    "id": 93,
+    "question": "Which food contains healthy fats good for skin?",
+    "options": ["Almonds", "Candy bars", "Fried snacks", "Sugary biscuits"],
+    "correct": 0
+  },
+  {
+    "id": 94,
+    "question": "Which oil is commonly used in Asian stir fries?",
+    "options": ["Sesame oil", "Butter", "Palm oil", "Ghee"],
+    "correct": 0
+  },
+  {
+    "id": 95,
+    "question": "Which snack is naturally low in oil?",
+    "options": ["Fruit salad", "French fries", "Fried peanuts", "Puffed snacks"],
+    "correct": 0
+  },
+
+  {
+    "id": 96,
+    "question": "Which oil is ideal for baking?",
+    "options": ["Canola oil", "Butter oil", "Ghee", "Palm oil"],
+    "correct": 0
+  },
+  {
+    "id": 97,
+    "question": "Which food is a natural source of omega-3?",
+    "options": ["Chia seeds", "White sugar", "Chocolate cream", "White rice"],
+    "correct": 0
+  },
+  {
+    "id": 98,
+    "question": "Which oil improves insulin sensitivity?",
+    "options": ["Olive oil", "Butter", "Palm oil", "Lard"],
+    "correct": 0
+  },
+  {
+    "id": 99,
+    "question": "Which cooking method keeps dishes low in calories?",
+    "options": ["Boiling", "Deep frying", "Pan frying", "Butter roasting"],
+    "correct": 0
+  },
+  {
+    "id": 100,
+    "question": "Which oil is ideal for grilling vegetables?",
+    "options": ["Olive oil", "Butter", "Palm oil", "Hydrogenated oils"],
+    "correct": 0
+  }
+,
+  {
+    "id": 101,
+    "question": "Which type of cooking reduces the need for oil the most?",
+    "options": ["Steaming", "Deep frying", "Shallow frying", "Sautéing"],
+    "correct": 0
+  },
+  {
+    "id": 102,
+    "question": "Which oil is best known for anti-inflammatory benefits?",
+    "options": ["Olive oil", "Palm oil", "Hydrogenated oil", "Butter"],
+    "correct": 0
+  },
+  {
+    "id": 103,
+    "question": "Which food naturally contains healthy plant fats?",
+    "options": ["Avocados", "White bread", "Candies", "Soft drinks"],
+    "correct": 0
+  },
+  {
+    "id": 104,
+    "question": "Which cooking method removes excess moisture without oil?",
+    "options": ["Roasting", "Deep frying", "Pan frying", "Sautéing"],
+    "correct": 0
+  },
+  {
+    "id": 105,
+    "question": "Which oil is high in monounsaturated fats?",
+    "options": ["Olive oil", "Butter oil", "Mustard oil", "Palm oil"],
+    "correct": 0
+  },
+
+  {
+    "id": 106,
+    "question": "Which cooking technique reduces calorie intake the most?",
+    "options": ["Boiling", "Frying", "Shallow frying", "Searing"],
+    "correct": 0
+  },
+  {
+    "id": 107,
+    "question": "Which food is considered a healthy fat source?",
+    "options": ["Nuts and seeds", "French fries", "Sugary donuts", "Butter biscuits"],
+    "correct": 0
+  },
+  {
+    "id": 108,
+    "question": "Which oil is recommended for cold dishes like salads?",
+    "options": ["Extra virgin olive oil", "Palm oil", "Ghee", "Lard"],
+    "correct": 0
+  },
+  {
+    "id": 109,
+    "question": "Which type of fat is harmful and should be avoided?",
+    "options": ["Trans fats", "Monounsaturated fats", "Polyunsaturated fats", "Omega-3 fats"],
+    "correct": 0
+  },
+  {
+    "id": 110,
+    "question": "Which cooking method results in maximum oil absorption?",
+    "options": ["Deep frying", "Steaming", "Boiling", "Air frying"],
+    "correct": 0
+  },
+
+  {
+    "id": 111,
+    "question": "Which oil is best for high-heat cooking?",
+    "options": ["Avocado oil", "Flaxseed oil", "Butter oil", "Sesame oil"],
+    "correct": 0
+  },
+  {
+    "id": 112,
+    "question": "Which food contains natural omega-3 fats?",
+    "options": ["Walnuts", "Pasta", "Cake", "White bread"],
+    "correct": 0
+  },
+  {
+    "id": 113,
+    "question": "Which low-oil cooking method prevents nutrient loss?",
+    "options": ["Steaming", "Deep frying", "Over-roasting", "Pressure frying"],
+    "correct": 0
+  },
+  {
+    "id": 114,
+    "question": "Which cooking oil is rich in vitamin E?",
+    "options": ["Sunflower oil", "Ghee", "Coconut oil", "Palm oil"],
+    "correct": 0
+  },
+  {
+    "id": 115,
+    "question": "Which fat supports brain function?",
+    "options": ["Omega-3 fats", "Trans fats", "Hydrogenated fats", "Artificial fats"],
+    "correct": 0
+  },
+
+  {
+    "id": 116,
+    "question": "Which is the healthiest alternative to frying snacks?",
+    "options": ["Air frying", "Double frying", "Butter frying", "Pan frying"],
+    "correct": 0
+  },
+  {
+    "id": 117,
+    "question": "Which oil becomes toxic at high heat?",
+    "options": ["Flaxseed oil", "Avocado oil", "Peanut oil", "Mustard oil"],
+    "correct": 0
+  },
+  {
+    "id": 118,
+    "question": "Which food is considered a healthy alternative to chips?",
+    "options": ["Roasted chickpeas", "Fried nachos", "Cream biscuits", "Butter popcorn"],
+    "correct": 0
+  },
+  {
+    "id": 119,
+    "question": "Which cooking method uses minimal or no oil?",
+    "options": ["Steaming", "Deep frying", "Shallow frying", "Sautéing"],
+    "correct": 0
+  },
+  {
+    "id": 120,
+    "question": "Which oil is typically used in salad dressings?",
+    "options": ["Olive oil", "Lard", "Butter oil", "Palm oil"],
+    "correct": 0
+  },
+
+  {
+    "id": 121,
+    "question": "Which nutrient provides the most calories per gram?",
+    "options": ["Fat", "Protein", "Carbohydrate", "Vitamin C"],
+    "correct": 0
+  },
+  {
+    "id": 122,
+    "question": "Which fat is naturally found in fish?",
+    "options": ["Omega-3 fats", "Trans fats", "Hydrogenated fats", "Synthetic fats"],
+    "correct": 0
+  },
+  {
+    "id": 123,
+    "question": "Which method is used to cook without losing nutrients?",
+    "options": ["Steaming", "Overfrying", "Cooking on high flame", "Slow deep frying"],
+    "correct": 0
+  },
+  {
+    "id": 124,
+    "question": "Which oil helps maintain healthy cholesterol levels?",
+    "options": ["Olive oil", "Butter", "Palm oil", "Shortening"],
+    "correct": 0
+  },
+  {
+    "id": 125,
+    "question": "Which food is a healthy high-fat option?",
+    "options": ["Avocado", "French fries", "Chocolate frosting", "Fried peanuts"],
+    "correct": 0
+  },
+
+  {
+    "id": 126,
+    "question": "Which oil should NOT be heated?",
+    "options": ["Flaxseed oil", "Rice bran oil", "Peanut oil", "Mustard oil"],
+    "correct": 0
+  },
+  {
+    "id": 127,
+    "question": "Which cooking method requires no oil at all?",
+    "options": ["Steaming", "Shallow frying", "Stir frying", "Pan roasting"],
+    "correct": 0
+  },
+  {
+    "id": 128,
+    "question": "Which fat helps build hormones?",
+    "options": ["Healthy fats", "Trans fats", "Artificial fats", "Shortening"],
+    "correct": 0
+  },
+  {
+    "id": 129,
+    "question": "Which oil is best for stir-frying vegetables?",
+    "options": ["Avocado oil", "Coconut oil", "Butter oil", "Lard"],
+    "correct": 0
+  },
+  {
+    "id": 130,
+    "question": "Which method significantly reduces oil intake?",
+    "options": ["Air frying", "Deep frying", "Shallow frying", "Pan frying"],
+    "correct": 0
+  },
+
+  {
+    "id": 131,
+    "question": "Which snack is high in healthy fats?",
+    "options": ["Almonds", "Potato chips", "Sugary biscuits", "Candy"],
+    "correct": 0
+  },
+  {
+    "id": 132,
+    "question": "Which food is a healthy oil-rich seed?",
+    "options": ["Chia seeds", "White flour", "Sugar powder", "Processed cereal"],
+    "correct": 0
+  },
+  {
+    "id": 133,
+    "question": "Which type of oil is best for grilling?",
+    "options": ["Olive oil", "Palm oil", "Butter oil", "Shortening"],
+    "correct": 0
+  },
+  {
+    "id": 134,
+    "question": "Which fat is a major risk factor for heart disease?",
+    "options": ["Trans fats", "Omega-3 fats", "Monounsaturated fats", "Polyunsaturated fats"],
+    "correct": 0
+  },
+  {
+    "id": 135,
+    "question": "Which food is naturally high in healthy oils?",
+    "options": ["Olives", "Bread", "Chocolate biscuits", "Chips"],
+    "correct": 0
+  },
+
+  {
+    "id": 136,
+    "question": "Which is the healthiest oil for frying?",
+    "options": ["Avocado oil", "Flaxseed oil", "Butter oil", "Shortening"],
+    "correct": 0
+  },
+  {
+    "id": 137,
+    "question": "Which cooking method requires the MOST oil?",
+    "options": ["Deep frying", "Steaming", "Boiling", "Air frying"],
+    "correct": 0
+  },
+  {
+    "id": 138,
+    "question": "Which oil is effective for lowering inflammation?",
+    "options": ["Olive oil", "Palm oil", "Butter", "Shortening"],
+    "correct": 0
+  },
+  {
+    "id": 139,
+    "question": "Which healthy alternative can replace butter on toast?",
+    "options": ["Avocado spread", "Cream cheese", "Mayonnaise", "Ghee"],
+    "correct": 0
+  },
+  {
+    "id": 140,
+    "question": "Which cooking style reduces overall calories consumed?",
+    "options": ["Grilling", "Deep frying", "Shallow frying", "Butter toasting"],
+    "correct": 0
+  },
+
+  {
+    "id": 141,
+    "question": "Which food is a healthy fat-rich snack?",
+    "options": ["Roasted almonds", "Fried snacks", "Pastries", "Sugary cereal"],
+    "correct": 0
+  },
+  {
+    "id": 142,
+    "question": "Which oil is safe for very high heat?",
+    "options": ["Avocado oil", "Flaxseed oil", "Butter oil", "Palm oil"],
+    "correct": 0
+  },
+  {
+    "id": 143,
+    "question": "Which fat supports brain and heart health?",
+    "options": ["Omega-3 fats", "Trans fats", "Hydrogenated fats", "Refined fats"],
+    "correct": 0
+  },
+  {
+    "id": 144,
+    "question": "Which food is a healthy alternative to butter?",
+    "options": ["Peanut butter", "Cheese", "Margarine", "Cream"],
+    "correct": 0
+  },
+  {
+    "id": 145,
+    "question": "Which oil is best for sautéing vegetables?",
+    "options": ["Olive oil", "Palm oil", "Butter", "Shortening"],
+    "correct": 0
+  },
+
+  {
+    "id": 146,
+    "question": "Which cooking method does NOT require oil?",
+    "options": ["Steaming", "Sautéing", "Shallow frying", "Tawa frying"],
+    "correct": 0
+  },
+  {
+    "id": 147,
+    "question": "Which healthy food contains natural oils?",
+    "options": ["Seeds", "Soft drinks", "Chocolates", "Chips"],
+    "correct": 0
+  },
+  {
+    "id": 148,
+    "question": "Which oil should be avoided for frying?",
+    "options": ["Flaxseed oil", "Peanut oil", "Mustard oil", "Corn oil"],
+    "correct": 0
+  },
+  {
+    "id": 149,
+    "question": "Which cooking method keeps food light and low-calorie?",
+    "options": ["Steaming", "Deep frying", "Shallow frying", "Pan frying"],
+    "correct": 0
+  },
+  {
+    "id": 150,
+    "question": "Which oil is recommended for everyday cooking?",
+    "options": ["Olive oil", "Butter oil", "Lard", "Shortening"],
+    "correct": 0
+  }
+]

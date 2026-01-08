@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/jpg" href="/oil2.jpg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oilwise</title>
+
+  <style>
+    body {
+      top: 0 !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      overflow-x: hidden !important;
+    }
+
+    /* Hide Google banner frame completely - this prevents left-side text */
+    .goog-te-banner-frame {
+      display: none !important;
+      visibility: hidden !important;
+      width: 0 !important;
+      height: 0 !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      border: 0 !important;
+      position: fixed !important;
+      top: -9999px !important;
+      left: -9999px !important;
+    }
+
+    /* Hide tooltip, logo, branding */
+    #goog-gt-tt,
+    .goog-te-balloon-frame,
+    .goog-logo-link,
+    .goog-te-gadget img,
+    .skiptranslate,
+    .goog-te-banner-frame-wrapper,
+    .goog-te-floating-translation-panel {
+      display: none !important;
+      visibility: hidden !important;
+      width: 0 !important;
+      height: 0 !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      border: 0 !important;
+    }
+
+    /* IMPORTANT: Show the gadget container */
+    .goog-te-gadget {
+      display: block !important;
+      visibility: visible !important;
+      pointer-events: auto !important;
+      z-index: 102 !important;
+      position: relative !important;
+    }
+
+    /* Style the language selector dropdown */
+    .goog-te-gadget .goog-te-combo {
+      font-size: 16px !important;
+      padding: 10px 18px !important;
+      border-radius: 14px !important;
+      background: linear-gradient(135deg, #e0f7fa 0%, #ffe3fb 100%) !important;
+      color: #222 !important;
+      border: 3px solid #7cf5ff !important;
+      cursor: pointer !important;
+      font-weight: 700 !important;
+      transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
+      display: block !important;
+      visibility: visible !important;
+      box-shadow: 0 12px 32px rgba(124,245,255,0.22), 0 2px 8px rgba(255,155,251,0.18) !important;
+      outline: none !important;
+      pointer-events: auto !important;
+      user-select: auto !important;
+      z-index: 99999 !important;
+    }
+
+    .goog-te-gadget .goog-te-combo:hover {
+      background: linear-gradient(135deg, #7cf5ff 0%, #ff9bfb 100%) !important;
+      border-color: #ff9bfb !important;
+      box-shadow: 0 16px 40px rgba(255,155,251,0.28), 0 2px 8px rgba(124,245,255,0.22) !important;
+      color: #222 !important;
+    }
+
+    /* Show and style the dropdown menu frame */
+    .goog-te-menu-frame {
+      display: block !important;
+      visibility: visible !important;
+      pointer-events: auto !important;
+      user-select: auto !important;
+      z-index: 99999 !important;
+    }
+
+    /* Show and style the menu items */
+    .goog-te-menu2 {
+      display: block !important;
+      visibility: visible !important;
+      pointer-events: auto !important;
+      user-select: auto !important;
+      z-index: 99999 !important;
+    }
+
+    /* Style the gadget and combo */
+    .goog-te-gadget {
+      text-align: center !important;
+      margin-top: 8px !important;
+    }
+
+    /* Combo - show it clearly */
+    .goog-te-gadget .goog-te-combo {
+      color: #222 !important;
+      font-size: 16px !important;
+      display: inline-block !important;
+      visibility: visible !important;
+      line-height: normal !important;
+      padding: 10px 18px !important;
+    }
+
+    /* Style the "Translate" text - light theme default (white) */
+    .goog-te-gadget {
+      font-size: 14px !important;
+      line-height: 1.5 !important;
+      color: white !important;
+    }
+
+    /* Dark theme - blue text */
+    html.dark .goog-te-gadget {
+      color: #00b7ff !important;
+    }
+
+    /* Light theme - explicitly white text */
+    html.light .goog-te-gadget {
+      color: white !important;
+    }
+
+    /* Rectangle cover image - hidden */
+    #googleTranslateCover {
+      display: none !important;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- COVER IMAGE -->
+  <img id="googleTranslateCover" src="/rectangle1.png" alt="" />
+
+  <!-- LANGUAGE DROPDOWN - Below Notifications Bell -->
+  <div
+    id="google_translate_element"
+    style="
+      position: fixed;
+      top: 150px;
+      right: 50px;
+      z-index: 99999;
+      background: transparent;
+      padding: 8px;
+      border-radius: 16px;
+      box-shadow: 0 8px 32px rgba(124,245,255,0.12);
+      display: block !important;
+      visibility: visible !important;
+    "
+  ></div>
+
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+
+  <!-- INIT GOOGLE TRANSLATE -->
+  <script>
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement(
+        {
+          pageLanguage: "en",
+          includedLanguages: "",
+          autoDisplay: true,
+        },
+        "google_translate_element"
+      );
+    }
+  </script>
+
+  <!-- REMOVE TOP BANNER -->
+  <script>
+    function hideGoogleBanner() {
+      const frame = document.querySelector(".goog-te-banner-frame");
+      if (frame) frame.remove();
+
+      document.body.style.top = "0px";
+      document.documentElement.style.top = "0px";
+    }
+
+    window.addEventListener("load", hideGoogleBanner);
+
+    new MutationObserver(hideGoogleBanner)
+      .observe(document.body, { childList: true, subtree: true });
+  </script>
+
+  <!-- HIDE POWERED BY TEXT + SET PLACEHOLDER -->
+  <script>
+    function fixTranslateMenu() {
+      const combo = document.querySelector('.goog-te-gadget .goog-te-combo');
+      const gadget = document.querySelector('.goog-te-gadget');
+
+      if (!combo || !gadget) return;
+
+      // Aggressively hide all sibling elements and children (except combo)
+      gadget.childNodes.forEach(node => {
+        if (node !== combo && node.nodeType !== Node.COMMENT_NODE) {
+          if (node.nodeType === Node.ELEMENT_NODE) {
+            node.style.display = 'none !important';
+            node.style.visibility = 'hidden !important';
+            node.style.width = '0 !important';
+            node.style.height = '0 !important';
+            node.style.margin = '0 !important';
+            node.style.padding = '0 !important';
+          } else if (node.nodeType === Node.TEXT_NODE) {
+            node.textContent = '';
+          }
+        }
+      });
+
+      // Force the combo to show "Select Language"
+      // Find the actual text content and replace it
+      const comboText = combo.textContent.trim();
+      
+      if (comboText && !comboText.includes('Select Language')) {
+        // For select element
+        if (combo.tagName === 'SELECT') {
+          const options = combo.querySelectorAll('option');
+          if (options.length > 0) {
+            options[0].textContent = 'Select Language';
+            combo.selectedIndex = 0;
+          }
+        } else {
+          // For div-based combo (fallback)
+          // Clear all text nodes
+          let walker = document.createTreeWalker(
+            combo,
+            NodeFilter.SHOW_TEXT,
+            null
+          );
+          let textNode;
+          let nodesToRemove = [];
+          while (textNode = walker.nextNode()) {
+            if (textNode.textContent.includes('English') || textNode.textContent.trim()) {
+              nodesToRemove.push(textNode);
+            }
+          }
+          nodesToRemove.forEach(n => n.parentElement.removeChild(n));
+          
+          // Add our custom text
+          if (!combo.textContent.includes('Select Language')) {
+            combo.textContent = 'Select Language';
+          }
+        }
+      }
+    }
+
+    // Run immediately when DOM is ready
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', fixTranslateMenu);
+    } else {
+      fixTranslateMenu();
+    }
+
+    // Also run on load and periodically
+    window.addEventListener('load', fixTranslateMenu);
+    const cleanupInterval = setInterval(() => {
+      fixTranslateMenu();
+    }, 200);
+  </script>
+
+  <!-- GOOGLE TRANSLATE SCRIPT -->
+  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+</html>
+ index.html

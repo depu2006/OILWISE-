@@ -1,0 +1,464 @@
+/* Campaigns Page - Mobile First Responsive */
+
+/* ============================================================
+   CAROUSEL STYLES
+============================================================ */
+
+/* Mobile: < 640px */
+.campaigns-carousel {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  height: 300px;
+  width: 100%;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  animation: slideInTop 0.6s ease-out;
+}
+
+.campaigns-carousel-track {
+  display: flex;
+  transform: translateX(0);
+  transition: transform 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  height: 100%;
+}
+
+.campaigns-carousel-slide {
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  height: 100%;
+  animation: fadeIn 0.5s ease-in;
+}
+
+.campaigns-carousel-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.campaigns-carousel-slide:hover .campaigns-carousel-image {
+  transform: scale(1.05);
+}
+
+.campaigns-carousel-content {
+  flex: 1;
+  text-align: center;
+}
+
+.campaigns-carousel-content h3 {
+  margin: 0 0 8px 0;
+  color: var(--brand);
+  font-size: 16px;
+  animation: slideInBottom 0.6s ease-out;
+}
+
+.campaigns-carousel-content p {
+  margin: 0;
+  line-height: 1.4;
+  font-size: 13px;
+  color: var(--text);
+}
+
+.campaigns-carousel-dots {
+  position: relative;
+  bottom: 0px;
+  /* Moved relative position so it doesn't overlap weirdly */
+  margin-top: -20px;
+  left: 0;
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+  width: 100%;
+}
+
+.campaigns-carousel-dot {
+  width: 10px;
+  height: 5px;
+  border-radius: 50%;
+  padding: 0;
+  min-width: 10px;
+  border: 1px solid var(--border);
+  cursor: pointer;
+  transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  background: var(--input-bg);
+}
+
+.campaigns-carousel-dot.active {
+  background: var(--brand);
+  border-color: var(--brand);
+  width: 24px;
+  border-radius: 4px;
+}
+
+.campaigns-carousel-dot:hover {
+  background: var(--brand-accent);
+  border-color: var(--brand-accent);
+  transform: scale(1.1);
+}
+
+/* ============================================================
+   ACTION GRID
+============================================================ */
+
+.campaigns-action-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  animation: slideInBottom 0.6s ease-out;
+}
+
+.campaigns-action-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 16px;
+  text-align: center;
+  min-height: 160px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  animation: scaleIn 0.5s ease-out;
+}
+
+.campaigns-action-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--brand);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.campaigns-action-icon {
+  font-size: 40px;
+  margin-bottom: 12px;
+  transition: transform 0.3s ease;
+  animation: bounce 2s ease-in-out infinite;
+}
+
+.campaigns-action-card:hover .campaigns-action-icon {
+  transform: scale(1.2) rotate(10deg);
+}
+
+.campaigns-action-card h3 {
+  margin: 0 0 8px 0;
+  font-size: 16px;
+  background: linear-gradient(90deg, var(--brand), var(--brand-accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.campaigns-action-card p {
+  margin: 0 0 16px 0;
+  font-size: 13px;
+  line-height: 1.4;
+  color: var(--text-secondary);
+}
+
+.campaigns-action-button {
+  padding: 10px 20px;
+  font-size: 14px;
+  background: linear-gradient(135deg, var(--brand), var(--brand-accent));
+  color: #000;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.campaigns-action-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* ============================================================
+   MODAL STYLES
+============================================================ */
+
+/* Modal Styles - Mobile First */
+.campaigns-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 12px;
+  animation: fadeIn 0.3s ease-in;
+  backdrop-filter: blur(4px);
+}
+
+.campaigns-modal-content {
+  width: 100%;
+  max-width: 600px;
+  max-height: 80vh;
+  overflow-y: auto;
+  border-radius: 12px;
+  animation: scaleIn 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  background: var(--panel);
+  border: 1px solid var(--border);
+  padding: 20px;
+}
+
+.campaigns-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+  animation: slideInTop 0.5s ease-out;
+}
+
+.campaigns-modal-header h3 {
+  margin: 0;
+  font-size: 18px;
+  background: linear-gradient(90deg, var(--brand), var(--brand-accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.campaigns-modal-close-btn {
+  background: none;
+  border: none;
+  color: var(--text);
+  cursor: pointer;
+  font-size: 18px;
+  padding: 0;
+  min-width: auto;
+  min-height: auto;
+  transition: all 0.3s ease;
+}
+
+.campaigns-modal-close-btn:hover {
+  color: var(--brand);
+  transform: rotate(90deg);
+}
+
+/* Updated Quiz Option Styles using variables */
+.campaigns-quiz-option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--input-bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px 16px;
+  margin: 8px 0;
+  font-size: 15px;
+  color: var(--text);
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.campaigns-quiz-option:hover {
+  background: var(--text);
+  color: var(--bg);
+  transform: translateY(-1px);
+  border-color: var(--brand);
+}
+
+.campaigns-quiz-option:hover span {
+  color: var(--bg);
+}
+
+.campaigns-quiz-option input[type="radio"] {
+  appearance: none;
+  width: 18px;
+  height: 5px;
+  border: 2px solid var(--brand-accent);
+  border-radius: 50%;
+  margin-right: 10px;
+  cursor: pointer;
+  position: relative;
+  background: transparent;
+}
+
+.campaigns-quiz-option input[type="radio"]:checked::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 10px;
+  height: 10px;
+  background: var(--brand-accent);
+  border-radius: 50%;
+}
+
+.campaigns-quiz-option.correct {
+  border: 2px solid #3ee57f;
+  background: rgba(62, 229, 127, 0.1);
+  color: var(--text);
+}
+
+.campaigns-quiz-option.wrong {
+  border: 2px solid #ff5d5d;
+  background: rgba(255, 93, 93, 0.1);
+  color: var(--text);
+}
+
+
+.campaigns-food-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.campaigns-food-input {
+  width: 100%;
+  min-height: 44px;
+  background: var(--input-bg);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.campaigns-food-input:focus {
+  outline: none;
+  border-color: var(--brand);
+}
+
+.campaigns-food-button {
+  min-height: 44px;
+  font-size: 14px;
+  background: var(--input-bg);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+  padding: 0 16px;
+}
+
+.campaigns-food-button:hover {
+  background: var(--bg);
+  border-color: var(--brand);
+  color: var(--brand);
+}
+
+.campaigns-quiz-result {
+  text-align: center;
+  padding: 20px;
+}
+
+.campaigns-quiz-submit {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  background: linear-gradient(135deg, var(--brand), var(--brand-accent));
+  color: #000;
+  font-weight: 700;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.campaigns-quiz-submit:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.1);
+}
+
+/* Tablet: 640px - 768px */
+@media (min-width: 640px) {
+  .campaigns-carousel {
+    height: 320px;
+  }
+
+  .campaigns-carousel-slide {
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .campaigns-carousel-image {
+    width: 40%;
+    height: 280px;
+    flex-shrink: 0;
+  }
+
+  .campaigns-carousel-content {
+    flex: 1;
+    text-align: left;
+  }
+
+  .campaigns-carousel-content h3 {
+    font-size: 18px;
+  }
+
+  .campaigns-carousel-content p {
+    font-size: 14px;
+  }
+
+  .campaigns-action-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  .campaigns-action-card {
+    min-height: 200px;
+    padding: 32px 16px;
+  }
+
+  .campaigns-action-icon {
+    font-size: 48px;
+  }
+
+  .campaigns-action-card h3 {
+    font-size: 17px;
+  }
+
+  .campaigns-modal-content {
+    max-width: 600px;
+  }
+
+  .campaigns-food-form {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 12px;
+  }
+
+  .campaigns-food-input {
+    width: 100%;
+  }
+
+  .campaigns-food-button {
+    width: auto;
+  }
+}
+
+/* Desktop: 769px+ */
+@media (min-width: 769px) {
+  .campaigns-carousel {
+    height: 340px;
+  }
+
+  .campaigns-carousel-slide {
+    padding: 24px;
+  }
+
+  .campaigns-carousel-image {
+    width: 40%;
+    height: 300px;
+  }
+
+  .campaigns-action-card {
+    padding: 40px 24px;
+  }
+
+  .campaigns-action-icon {
+    font-size: 50px;
+  }
+}

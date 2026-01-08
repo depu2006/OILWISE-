@@ -1,0 +1,222 @@
+/* Analytics Page - Mobile First Responsive */
+
+/* ============================================================
+   BASE ANALYTICS STYLES
+============================================================ */
+
+/* Mobile: < 640px */
+.analytics-bmi-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  animation: slideInBottom 0.6s ease-out;
+}
+
+.analytics-bmi-section {
+  width: 100%;
+  animation: slideInBottom 0.6s ease-out;
+}
+
+.analytics-bmi-chart {
+  width: 100%;
+  height: 200px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(124,245,255,0.05), rgba(255,155,251,0.05));
+  border: 1px solid rgba(124,245,255,0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.analytics-bmi-chart:hover {
+  box-shadow: 0 8px 16px rgba(124,245,255,0.1);
+}
+
+/* ============================================================
+   ANALYTICS FORM
+============================================================ */
+
+.analytics-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  animation: slideInBottom 0.6s ease-out;
+}
+
+.analytics-form input {
+  width: 100%;
+  min-height: 44px;
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  background: linear-gradient(135deg, var(--input-bg), var(--input-bg));
+}
+
+.analytics-form input:focus {
+  box-shadow: 0 0 0 4px rgba(124,245,255,0.15), inset 0 2px 4px rgba(0,0,0,0.05);
+  transform: translateY(-2px);
+}
+
+.analytics-form button {
+  width: 100%;
+  min-height: 44px;
+  background: linear-gradient(135deg, var(--brand), var(--brand-accent), var(--brand-alt));
+  background-size: 200% 200%;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.analytics-form button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 24px rgba(124,245,255,0.3);
+}
+
+.analytics-form button:active {
+  transform: translateY(0);
+}
+
+/* ============================================================
+   ANALYTICS TIPS & INFO
+============================================================ */
+
+.analytics-tips-list {
+  max-height: 300px;
+  overflow-y: auto;
+  padding: 8px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(124,245,255,0.05), rgba(255,155,251,0.05));
+}
+
+.analytics-tips-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.analytics-tips-list::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--brand), var(--brand-accent));
+  border-radius: 999px;
+}
+
+.analytics-tip-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px;
+  background: linear-gradient(135deg, rgba(124,245,255,0.1), rgba(255,155,251,0.05));
+  border: 1px solid rgba(124,245,255,0.15);
+  border-radius: 10px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  line-height: 1.5;
+  transition: all 0.3s ease;
+  animation: slideInBottom 0.5s ease-out;
+}
+
+.analytics-tip-item:hover {
+  transform: translateX(4px);
+  border-color: var(--brand);
+  background: linear-gradient(135deg, rgba(124,245,255,0.15), rgba(255,155,251,0.1));
+  box-shadow: 0 4px 12px rgba(124,245,255,0.1);
+}
+
+.analytics-tip-item:nth-child(1) { animation-delay: 0.1s; }
+.analytics-tip-item:nth-child(2) { animation-delay: 0.2s; }
+.analytics-tip-item:nth-child(3) { animation-delay: 0.3s; }
+.analytics-tip-item:nth-child(n+4) { animation-delay: 0.4s; }
+
+/* ============================================================
+   ANALYTICS STATS
+============================================================ */
+
+.analytics-bmi-stats {
+  text-align: center;
+  margin-top: 12px;
+  animation: slideInTop 0.6s ease-out;
+}
+
+.analytics-bmi-value {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 4px;
+  background: linear-gradient(90deg, var(--brand), var(--brand-accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+/* ============================================================
+   RESPONSIVE BREAKPOINTS
+============================================================ */
+
+/* Tablet: 640px - 768px */
+@media (min-width: 640px) {
+  .analytics-bmi-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .analytics-form {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .analytics-form button {
+    grid-column: 1 / -1;
+  }
+}
+
+/* Desktop: 769px - 991px */
+@media (min-width: 769px) {
+  .analytics-form {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .analytics-form button {
+    grid-column: auto;
+  }
+}
+
+/* Large Desktop: 992px - 1199px */
+@media (min-width: 992px) {
+  .analytics-form {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+/* Extra Large: 1200px+ */
+@media (min-width: 1200px) {
+  .analytics-tips-list {
+    max-height: 400px;
+  }
+}
+
+/* ============================================================
+   ANIMATIONS
+============================================================ */
+
+@keyframes slideInBottom {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInTop {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}

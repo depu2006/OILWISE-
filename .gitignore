@@ -1,0 +1,41 @@
+# Node
+node_modules/
+**/node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build outputs
+build/
+dist/
+.cache/
+.next/
+out/
+coverage/
+*.tsbuildinfo
+
+# Env files
+.env
+.env.*
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Local databases
+*.db
+*.db-shm
+*.db-wal
+
+# Vite/React
+*.local
+
+# Misc
+.tmp/
+.svelte-kit/

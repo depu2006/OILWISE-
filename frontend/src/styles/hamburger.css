@@ -1,0 +1,219 @@
+/* ============================================================
+   HAMBURGER TOGGLE BUTTON
+============================================================ */
+
+/* Hamburger Toggle Button */
+.hamburger-toggle {
+  display: none;
+  flex-direction: column;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  gap: 5px;
+  position: relative;
+  z-index: 101;
+  box-shadow: none;
+  transition: all 0.3s ease;
+}
+
+.hamburger-toggle:hover {
+  transform: scale(1.1);
+}
+
+.hamburger-toggle span {
+  width: 24px;
+  height: 3px;
+  background: var(--text);
+  border-radius: 2px;
+  transition: all 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.hamburger-toggle:hover span {
+  background: var(--brand);
+  box-shadow: 0 0 8px var(--brand);
+}
+
+/* ============================================================
+   MOBILE MENU
+============================================================ */
+
+/* Mobile Menu */
+.mobile-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(7, 8, 20, 0.95);
+  backdrop-filter: blur(12px);
+  flex-direction: column;
+  padding-top: 70px;
+  z-index: 100;
+  transform: translateX(-100%);
+  transition: transform 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  overflow-y: auto;
+  animation: slideInLeft 0.4s ease-out;
+}
+
+.mobile-menu.open {
+  transform: translateX(0);
+  display: flex;
+  animation: slideInLeft 0.3s ease-out;
+}
+
+.mobile-menu-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 99;
+  animation: fadeIn 0.3s ease-in;
+  backdrop-filter: blur(4px);
+}
+
+@media (max-width: 768px) {
+  .mobile-menu-overlay {
+    display: block;
+  }
+}
+
+.mobile-menu-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px;
+  animation: slideInTop 0.4s ease-out;
+}
+
+.mobile-menu a {
+  display: block;
+  padding: 14px 16px;
+  border-radius: 12px;
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  text-align: center;
+  font-weight: 500;
+  transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  animation: slideInLeft 0.4s ease-out;
+}
+
+.mobile-menu a:nth-child(1) { animation-delay: 0.05s; }
+.mobile-menu a:nth-child(2) { animation-delay: 0.1s; }
+.mobile-menu a:nth-child(3) { animation-delay: 0.15s; }
+.mobile-menu a:nth-child(n+4) { animation-delay: 0.2s; }
+
+.mobile-menu a:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.12);
+  transform: translateX(4px);
+}
+
+.mobile-menu a.active {
+  background: linear-gradient(90deg, var(--brand), var(--brand-accent), var(--brand-alt));
+  color: #0b0f19;
+  font-weight: 800;
+  box-shadow: 0 6px 16px rgba(124, 245, 255, 0.25);
+  border: none;
+  transform: translateX(4px);
+}
+
+.mobile-menu-separator {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  margin: 8px 0;
+}
+
+.mobile-menu-languages {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+  animation: slideInBottom 0.4s ease-out;
+}
+
+.mobile-menu-languages button {
+  flex: 1;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--text);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  font-weight: 600;
+  transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.mobile-menu-languages button:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.12);
+  transform: translateY(-2px);
+}
+
+.mobile-menu-languages button.active {
+  background: linear-gradient(90deg, var(--brand), var(--brand-accent));
+  color: #0b0f19;
+  border: none;
+  box-shadow: 0 6px 16px rgba(124, 245, 255, 0.25);
+  transform: translateY(-2px);
+}
+
+/* ============================================================
+   ANIMATIONS
+============================================================ */
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInTop {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInBottom {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Show hamburger on tablets and smaller */
+@media (max-width: 768px) {
+  .hamburger-toggle {
+    display: flex;
+  }
+
+  .mobile-menu {
+    display: flex;
+  }
+}

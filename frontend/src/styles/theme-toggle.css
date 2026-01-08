@@ -1,0 +1,240 @@
+/* ============================================================
+   THEME TOGGLE SWITCH - ENHANCED
+============================================================ */
+
+.theme-toggle-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  background: linear-gradient(135deg, rgba(124,245,255,0.05), rgba(255,155,251,0.05));
+  border: 1.5px solid rgba(124,245,255,0.15);
+  border-radius: 12px;
+  animation: slideInRight 0.6s ease-out;
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.theme-toggle-container:hover {
+  background: linear-gradient(135deg, rgba(124,245,255,0.1), rgba(255,155,251,0.1));
+  border-color: var(--brand);
+  box-shadow: 0 4px 12px rgba(124,245,255,0.15);
+}
+
+/* Theme icons */
+.theme-icon {
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.theme-icon.sun {
+  color: #ffd84d;
+}
+
+.theme-icon.moon {
+  color: #7cf5ff;
+}
+
+/* Improved Switch */
+.switch {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  width: 56px;
+  height: 28px;
+}
+
+.switch input {
+  display: none;
+}
+
+/* Slider track */
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(124,245,255,0.3), rgba(124,245,255,0.1));
+  border: 1.5px solid rgba(124,245,255,0.2);
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Slider thumb */
+.slider::before {
+  content: "";
+  position: absolute;
+  height: 22px;
+  width: 22px;
+  left: 2px;
+  top: 2px;
+  background: linear-gradient(135deg, #ffffff, #f5f5f5);
+  border-radius: 50%;
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Active state (dark mode) */
+input:checked + .slider {
+  background: linear-gradient(135deg, #7cf5ff, #ff9bfb);
+  border-color: #7cf5ff;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.2), 0 0 16px rgba(124,245,255,0.3);
+}
+
+input:checked + .slider::before {
+  transform: translateX(28px);
+  background: linear-gradient(135deg, #1a1a2e, #0a0e27);
+  box-shadow: 0 3px 8px rgba(124,245,255,0.4);
+}
+
+/* Hover states */
+.switch:hover .slider {
+  border-color: rgba(124,245,255,0.4);
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.1), 0 0 12px rgba(124,245,255,0.2);
+}
+
+input:checked:hover + .slider {
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.2), 0 0 20px rgba(124,245,255,0.4);
+}
+
+/* Focus state for accessibility */
+input:focus + .slider {
+  outline: 2px solid rgba(124,245,255,0.3);
+  outline-offset: 2px;
+}
+
+/* ============================================================
+   THEME LABEL
+============================================================ */
+
+.theme-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--muted);
+  min-width: 35px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+html.light .theme-label {
+  color: #d98200;
+}
+
+html.dark .theme-label {
+  color: #7cf5ff;
+}
+
+/* ============================================================
+   LIGHT THEME TOGGLE STYLING
+============================================================ */
+
+html.light .theme-toggle-container {
+  background: linear-gradient(135deg, rgba(0,183,255,0.08), rgba(255,108,229,0.08));
+  border-color: rgba(0,183,255,0.2);
+}
+
+html.light .theme-toggle-container:hover {
+  background: linear-gradient(135deg, rgba(0,183,255,0.12), rgba(255,108,229,0.12));
+  border-color: rgba(0,183,255,0.3);
+  box-shadow: 0 4px 12px rgba(0,183,255,0.15);
+}
+
+html.light .slider {
+  background: linear-gradient(135deg, rgba(0,183,255,0.2), rgba(0,183,255,0.1));
+  border-color: rgba(0,183,255,0.25);
+}
+
+html.light .slider:hover {
+  border-color: rgba(0,183,255,0.4);
+}
+
+html.light input:checked + .slider {
+  background: linear-gradient(135deg, #00b7ff, #ff6ce5);
+  border-color: #00b7ff;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.1), 0 0 16px rgba(0,183,255,0.25);
+}
+
+html.light input:checked + .slider::before {
+  background: linear-gradient(135deg, #f0f5ff, #ffffff);
+  box-shadow: 0 3px 8px rgba(0,183,255,0.3);
+}
+
+/* ============================================================
+   ANIMATIONS
+============================================================ */
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* ============================================================
+   RESPONSIVE DESIGN
+============================================================ */
+
+@media (max-width: 768px) {
+  .theme-toggle-container {
+    padding: 6px 10px;
+    gap: 8px;
+  }
+
+  .switch {
+    width: 48px;
+    height: 24px;
+  }
+
+  .slider::before {
+    height: 18px;
+    width: 18px;
+    left: 2px;
+    top: 2px;
+  }
+
+  input:checked + .slider::before {
+    transform: translateX(24px);
+  }
+
+  .theme-icon {
+    font-size: 16px;
+  }
+
+  .theme-label {
+    font-size: 11px;
+    min-width: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .theme-label {
+    display: none;
+  }
+
+  .theme-toggle-container {
+    padding: 6px 8px;
+    gap: 6px;
+  }
+}

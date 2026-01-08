@@ -1,0 +1,29 @@
+{
+  "name": "oilwise_sih25269",
+  "version": "1.0.0",
+  "description": "Mobile-first, multilingual React + Express app to log edible oil consumption, get health analytics, AI-like recipe suggestions, participate in awareness campaigns, and earn rewards/badges. Partners can verify healthy eating certifications.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Haritha-054/Oilwise_SIH25269.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Haritha-054/Oilwise_SIH25269/issues"
+  },
+  "homepage": "https://github.com/Haritha-054/Oilwise_SIH25269#readme",
+  "dependencies": {
+    "axios": "^1.13.2",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "firebase": "^12.6.0",
+    "leaflet": "^1.9.4",
+    "react-leaflet": "^5.0.0",
+    "react-router-dom": "^7.9.6"
+  }
+}

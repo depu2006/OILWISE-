@@ -1,0 +1,122 @@
+[
+    {
+        "id": 1,
+        "question": "What is the recommended daily oil consumption for an adult?",
+        "options": [
+            "1-2 tablespoons",
+            "3-4 tablespoons",
+            "5-6 tablespoons",
+            "No limit"
+        ],
+        "correct": 0,
+        "points": 10
+    },
+    {
+        "id": 2,
+        "question": "Which cooking method uses the least amount of oil?",
+        "options": [
+            "Deep frying",
+            "Pan frying",
+            "Steaming",
+            "Stir frying"
+        ],
+        "correct": 2,
+        "points": 10
+    },
+    {
+        "id": 3,
+        "question": "What percentage of oil can be reduced by using air-frying instead of deep-frying?",
+        "options": [
+            "20-30%",
+            "40-50%",
+            "60-80%",
+            "90-100%"
+        ],
+        "correct": 2,
+        "points": 15
+    },
+    {
+        "id": 4,
+        "question": "Which oil is considered the healthiest for cooking?",
+        "options": [
+            "Vegetable oil",
+            "Olive oil",
+            "Palm oil",
+            "Butter"
+        ],
+        "correct": 1,
+        "points": 10
+    },
+    {
+        "id": 5,
+        "question": "How often should you change your cooking oil?",
+        "options": [
+            "Never",
+            "After 1 use",
+            "After 3-4 uses",
+            "After 10+ uses"
+        ],
+        "correct": 2,
+        "points": 10
+    },
+    {
+        "id": 6,
+        "question": "What is the main benefit of using olive oil?",
+        "options": [
+            "Cheaper",
+            "Contains healthy monounsaturated fats",
+            "Lasts longer",
+            "No taste"
+        ],
+        "correct": 1,
+        "points": 15
+    },
+    {
+        "id": 7,
+        "question": "Which cooking technique requires the most oil?",
+        "options": [
+            "Steaming",
+            "Grilling",
+            "Deep frying",
+            "Baking"
+        ],
+        "correct": 2,
+        "points": 10
+    },
+    {
+        "id": 8,
+        "question": "What happens when oil is heated beyond its smoke point?",
+        "options": [
+            "Nothing",
+            "Forms harmful compounds",
+            "Tastes better",
+            "Becomes healthier"
+        ],
+        "correct": 1,
+        "points": 15
+    },
+    {
+        "id": 9,
+        "question": "How much oil should you use for stir-frying vegetables?",
+        "options": [
+            "1-2 teaspoons",
+            "1-2 tablespoons",
+            "1/4 cup",
+            "1/2 cup"
+        ],
+        "correct": 0,
+        "points": 10
+    },
+    {
+        "id": 10,
+        "question": "Which is the best way to reduce oil in fried foods?",
+        "options": [
+            "Use more oil",
+            "Double fry",
+            "Use paper towels to absorb excess",
+            "Add salt"
+        ],
+        "correct": 2,
+        "points": 15
+    }
+]
